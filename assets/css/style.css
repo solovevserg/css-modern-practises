@@ -1,0 +1,80 @@
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    animation: fade 1s ease-out both;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrapper {
+    flex: auto;
+    display: flex;
+}
+
+main img {
+    width: 100%;
+}
+
+html {
+    background: #f8b195;
+}
+
+header,
+footer {
+    background: #6c567b;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.menu-item {
+    padding: 10px;
+}
+
+.logo {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+}
+
+a {
+    color: #f67280;
+    text-decoration: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    animation: spin 1s infinite linear;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f67280;
+    border-top-color: transparent;
+    border-radius: 100%;
+}
